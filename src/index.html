@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rick and Morty</title>
+    <link href="../src/output.css" rel="stylesheet" />
+    <style>
+      .dark-mode {
+        background-color: #2d2d2d;
+        color: #ffffff;
+      }
+      .light-mode {
+        background-color: #ffffff;
+        color: #000000;
+      }
+    </style>
+  </head>
+  <body class="light-mode">
+    <header
+      class="flex-col flex items-end justify-end p-4 h-[500px] bg-cover bg-no-repeat bg-center  text-white w-full" style="background-image: url(../src/images/give_a_cool_attractive_and_strange_image_of_rick_and_morty_where_the_laptop_is_in_front_of_it_and_i_ehgp3bni8bd5c87gf68h_0.png); background-size: 100% 100%;"
+    >
+      <div class="flex items-end">
+        
+    
+        <button
+          id="favoritesButton"
+          class="ml-4 bg-red-500 text-white p-2 rounded-md"
+        >
+          View Favorites
+        </button>
+      </div>
+      <div class="flex items-end mt-3">
+        <button id="themeToggle" class="bg-gray-500 text-white p-2 rounded-md">
+          change mode
+        </button>
+      </div>
+      
+    </header>
+
+    <main class="p-3 flex-col items-center flex">
+      <input
+        id="searchInput"
+        type="text"
+        placeholder="Search..."
+        class="p-2 mb-4 border border-gray-300 rounded-md w-1/2 text-black flex justify-center items-center"
+      />
+
+      <div
+        id="results"
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+      ></div>
+      <div
+        id="favorites"
+        class="hidden flex-row h-full content-start w-[50%]"
+      ></div>
+    </main>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
